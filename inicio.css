@@ -1,0 +1,102 @@
+
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Área principal */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Cartão com imagem e informações */
+.cartao {
+    background-color: white;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagem */
+.cartao img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Informações */
+.informacoes {
+    padding: 25px;
+}
+
+.informacoes h2 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.informacoes p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Link */
+.informacoes a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.informacoes a:hover {
+    background-color: #1d4ed8;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .cartao img {
+        height: 220px;
+    }
+
+    .informacoes {
+        padding: 18px;
+    }
+}
