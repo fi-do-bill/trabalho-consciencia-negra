@@ -1,44 +1,222 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Minha Biografia</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #24243e, #302b63, #0f0c29);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #ddd;
+        }
+
+        nav {
+            background-color: #1e1e2f;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a29bfe;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .perfil {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .perfil img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #302b63;
+            margin-bottom: 15px;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            color: #302b63;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #a29bfe;
+            padding-bottom: 8px;
+        }
+
+        .habilidades {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .habilidades span {
+            background: #302b63;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #1e1e2f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #a29bfe;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <header>
-        <h1>Minha Página de Informações</h1>
-        <p>Conheça mais sobre este assunto</p>
+        <h1>Minha Biografia</h1>
+        <p>Conheça minha história, sonhos e conquistas</p>
     </header>
 
-    <main>
-        <section class="cartao">
-            <img src="imagem.jpg" alt="Descrição da imagem">
+    <nav>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#historia">Minha história</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato">Contato</a>
+    </nav>
 
-            <div class="informacoes">
-                <h2>Título da Informação</h2>
+    <main class="container">
 
-                <p>
-                    Aqui você pode escrever as informações
-                    sobre a imagem, explicar o assunto
-                    e adicionar os detalhes que desejar.
-                </p>
+        <div class="perfil">
+            <img src="https://via.placeholder.com/180" alt="Minha foto">
+            <h2>Seu Nome</h2>
+            <p>Estudante | Sonhador(a) | Futuro(a) profissional</p>
+        </div>
 
-                <p><strong>Categoria:</strong> Exemplo</p>
-                <p><strong>Data:</strong> 29/10/2026</p>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>
+                Olá! Meu nome é Seu Nome. Sou uma pessoa que gosta de aprender,
+                conhecer coisas novas e enfrentar desafios. Tenho interesse
+                em tecnologia, educação e desenvolvimento pessoal.
+            </p>
+        </section>
 
-                <a href="https://www.google.com" target="_blank">
-                    Saiba mais
-                </a>
+        <section id="historia">
+            <h2>Minha História</h2>
+            <p>
+                Nasci em [sua cidade] e desde pequeno(a) sempre tive curiosidade
+                em descobrir o mundo ao meu redor. Ao longo da minha vida,
+                passei por experiências que me ensinaram importantes lições
+                e contribuíram para minha formação como pessoa.
+            </p>
+            <br>
+            <p>
+                Atualmente, estou estudando e buscando novos conhecimentos
+                para construir um futuro melhor e alcançar meus sonhos.
+            </p>
+        </section>
+
+        <section id="objetivos">
+            <h2>Meus Objetivos</h2>
+            <p>
+                Meu principal objetivo é conquistar meus sonhos, ter uma boa
+                carreira profissional, ajudar minha família e alcançar
+                independência financeira.
+            </p>
+            <br>
+            <p>
+                Também quero continuar aprendendo, evoluindo e aproveitando
+                as oportunidades que surgirem pelo caminho.
+            </p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Minhas Habilidades e Interesses</h2>
+            <div class="habilidades">
+                <span>Criatividade</span>
+                <span>Comunicação</span>
+                <span>Tecnologia</span>
+                <span>Trabalho em equipe</span>
+                <span>Aprendizagem</span>
+                <span>Organização</span>
             </div>
         </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p><strong>E-mail:</strong> seuemail@email.com</p>
+            <p><strong>Instagram:</strong> @seuinstagram</p>
+            <p><strong>Cidade:</strong> Sua cidade - Brasil</p>
+        </section>
+
     </main>
 
     <footer>
-        <p>© 2026 - Minha Página</p>
+        <p>&copy; 2026 - Minha Biografia. Todos os direitos reservados.</p>
+        <p>Feito com HTML e CSS ❤️</p>
     </footer>
 
 </body>
